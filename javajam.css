@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: Tahoma, Arial, sans-serif;
     background-color: #fcebb6;
@@ -12,21 +16,58 @@ body{
     height: 300px;
     background-image: url("./graphics /hero.jpg"); 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%100%;
+    background-position: center;
+}
+#heromugs{
+    height: 300px;
+    background-image: url("./graphics /heromugs.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%100%;
+    background-position: center;
+}
+#heroguitar{
+    height: 300px;
+    background-image: url("./graphics /heroguitar.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%100%;
     background-position: center;
 }
 main{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
     padding-bottom: 2em;
+    margin-left: 200px;
+    background-color: #fef6c2;
+    overflow: auto;
+
+}
+
+<!-- main desc 
+main h2, main h3, main h4, main p, main ul, main dl{
+    padding-left: 3em;
+    padding-right: 2 em;
 }
 
 header{
     background-color:#d2b48c;
-    color: #8c3826;
-    text-align: center;
+    color: #231814;
+    background-image: url("./graphics /coffeelogo.jpg") ;
+    background-repeat: no-repeat;
     padding-top: 5px;
+    padding-left: 240px;
     padding-bottom: 5px;
+}
+header a:link,
+header a:visited{
+    color: #231814;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #fef6c2;
+    text-decoration: none;
 }
 
 h1{
@@ -49,6 +90,10 @@ h4{
     font-size: 1.2em;
     padding-left: .5em;
     padding-bottom: .25em;
+    text-transform: capitalize;
+    border-bottom: 1px;
+    padding-bottom: 0;
+    clear: left;
 
 }
 
@@ -58,9 +103,26 @@ nav{
     font-size: 1.5em;
     padding-top: 5px;
     padding-bottom: 5px;
+    float: left;
+    width: 200px;
+
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+
 }
 nav a{
     text-decoration: none;
+}
+nav a:link {
+    color: #fef6c2;
+}
+nav a:visited {
+    color: #d2b48c;
+}
+nav a:hover {
+    color: #cc9933;
 }
 footer{
     text-align: center;
@@ -75,19 +137,30 @@ footer{
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    background-color: #fefaeb;
+    background-color: #231814;
     min-width:900px ;
     max-width: 1280px;
     box-shadow:0 4px 12px rgba(0, 0, 0, .25);
+    padding: 0;
 
 }
 .details{
     padding-left: 20%;
     padding-right: 20%;
+    overflow: auto;
 }
 img{
     padding-left: 10px;
     padding-right: 10px;
 }
+.onethird {
+    float: left;
+    width: 33%;
+}
 
       
+.floatleft{
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
