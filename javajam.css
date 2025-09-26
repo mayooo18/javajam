@@ -153,7 +153,7 @@ nav li{
     padding-left: 1em;
     padding-right: 1em;
     width: 100%;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #cc9933;
 }
 footer{
     text-align: center;
@@ -184,6 +184,19 @@ img{
 }
 #desktop{
     display: none;
+}
+
+table{
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+}
+
+td,th{
+    padding: 10px;
+}
+tr:nth-child(odd){
+    background-color: #d2b48e;
 }
 @media (min-width: 600px){
    header{
