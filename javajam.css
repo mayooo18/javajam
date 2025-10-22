@@ -1,40 +1,112 @@
+<<<<<<< HEAD
 audio{
     display: block;
     margin-top: 1em;
 }
+=======
+*{
+    box-sizing: border-box;
+}
+
+>>>>>>> ba7d094b674ee67fb8116b1f1a1502c02d37d447
 body{
     font-family: Tahoma, Arial, sans-serif;
-    background-color: #fcebb6;
+    background-color: #d2b48c;
     color: #221811;
-    background-image: url("./graphics /fadedroad50.jpg") ; 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    margin: 0;
 }
 
 #homehero{
     height: 300px;
-    background-image: url("./graphics /hero.jpg"); 
+    background-image: url("./graphics /road.jpg"); 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%100%;
     background-position: center;
 }
-main{
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
+#heromugs{
+    height: 300px;
+    background-image: url("./graphics /threemugs.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%100%;
+    background-position: center;
+}
+#heroguitar{
+    height: 300px;
+    background-image: url("./graphics /guitar.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%100%;
+    background-position: center;
+}
+#herojobs{
+    height: 300px;
+    background-image: url("./graphics /coffeecup.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%100%;
 }
 
+main{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 2em;
+    background-color: #fef6c2;
+
+
+}
+
+
+main h2{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+main h3{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+main h4{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+main p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+main ul{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+main div{
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+main dl{
+    padding-left: 1em;
+    padding-right: 1em;
+}
 header{
     background-color:#d2b48c;
-    color: #8c3826;
-    text-align: center;
+    color: #231814;
+    background-image: url("./graphics /cup.jpg") ;
+    background-repeat: no-repeat;
+    height: 128px;
     padding-top: 5px;
+    padding-left: 105px;
     padding-bottom: 5px;
+}
+header a:link,
+header a:visited{
+    color: #231814;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #fef6c2;
+    text-decoration: none;
 }
 
 h1{
-    font-size: 3em;
+    font-size: 2em;
     
 }
 h3{
@@ -53,18 +125,48 @@ h4{
     font-size: 1.2em;
     padding-left: .5em;
     padding-bottom: .25em;
+    text-transform: capitalize;
+    border-bottom: 1px;
+    padding-bottom: 0;
+    clear: left;
 
 }
 
 nav{
     text-align: center;
-    font-weight: 200;
     font-size: 1.5em;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    
+   
+  
+
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+
 }
 nav a{
     text-decoration: none;
+}
+nav a:link {
+    color: #fef6c2;
+}
+nav a:visited {
+    color: #d2b48c;
+}
+nav a:hover {
+    color: #cc9933;
+}
+nav li{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px solid #cc9933;
 }
 footer{
     text-align: center;
@@ -76,22 +178,154 @@ footer{
 }
 
 #wrapper {
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #fefaeb;
-    min-width:900px ;
-    max-width: 1280px;
-    box-shadow:0 4px 12px rgba(0, 0, 0, .25);
-
-}
+    background-color: #231814;
+    padding: 0;
+  }
+  
 .details{
     padding-left: 20%;
     padding-right: 20%;
+    overflow: auto;
 }
 img{
     padding-left: 10px;
     padding-right: 10px;
 }
 
-      
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left:  1em; width:  80%;  
+}
+
+
+
+input, textarea{
+    margin-bottom: .5em;
+}
+
+#mobile{
+    display: inline;
+}
+#desktop{
+    display: none;
+}
+
+table{
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+}
+
+td,th{
+    padding: 10px;
+}
+tr:nth-child(odd){
+    background-color: #d2b48e;
+}
+@media (min-width: 600px){
+   header{
+    text-align: center;
+    padding-left: 0;
+   }
+   form{
+    width: 40%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 6em 1fr;
+   }
+   input[type="submit"]{
+    grid-column: 2 / 3;
+    width: 9em;
+  }
+
+  #herojobs{
+    background-image: url("graphics /herojobs.jpg ");
+  }
+  h1{
+    font-size: 2em;
+    
+  }
+
+   nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+   }
+
+   nav li {
+    border-bottom: none;
+   }
+
+   #homehero{
+    height: 50vh;
+    background-image: url("./graphics /hero.jpg");
+   }
+   
+   #heromugs{
+    height: 50vh;
+    background-image: url("./graphics /heromugs.jpg");
+   }
+
+    #heroguitar{
+     height: 50vh;
+     background-image: url("./graphics /heroguitar.jpg");
+    }
+
+    #flow{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mobile{
+        display: none;
+    }
+
+    #desktop{
+        display: inline;
+    }
+
+    .details{
+        display: flex;
+        flex-direction: row;
+    }
+
+    h4{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+    @media (min-width: 1024px){
+        @supports(display:grid){
+            header{
+                grid-area: header;
+            }
+            nav {
+                grid-area: nav;
+            }
+            main {
+                grid-area: main;
+            }
+            footer {
+                grid-area: footer;
+            }
+
+            #wrapper{
+                display: grid;
+                grid-template: 
+                    "header header"
+                    "nav main"
+                    "footer footer"
+                    /200px;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            header{
+                background-image: url("./graphics /coffeelogo.jpg");
+            }
+        }
+    }
+
+
