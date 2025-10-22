@@ -1,3 +1,7 @@
+audio{
+    display: block;
+    margin-top: 1em;
+}
 body{
     font-family: Tahoma, Arial, sans-serif;
     background-color: #fcebb6;
