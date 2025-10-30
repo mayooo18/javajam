@@ -39,6 +39,7 @@ body{
     background-size: 100%100%;
 }
 
+
 main{
     padding-left: 0;
     padding-right: 0;
@@ -182,6 +183,15 @@ footer{
     padding-right: 20%;
     overflow: auto;
 }
+.item{
+    background-color: faf9f7;
+    margin: 1em ;
+    padding: 1em;
+    overflow: auto;
+}
+.item img{
+    float: right;
+}
 img{
     padding-left: 10px;
     padding-right: 10px;
@@ -253,6 +263,11 @@ tr:nth-child(odd){
     border-bottom: none;
    }
 
+   #herocouch{
+    height: 300px;
+    background: url(graphics/herocouch.jpg) no-repeat center center;
+
+   }
    #homehero{
     height: 50vh;
     background-image: url("./graphics /hero.jpg");
@@ -266,6 +281,7 @@ tr:nth-child(odd){
     #heroguitar{
      height: 50vh;
      background-image: url("./graphics /heroguitar.jpg");
+    background-size: 100% 100%;
     }
 
     #flow{
